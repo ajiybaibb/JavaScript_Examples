@@ -1,0 +1,48 @@
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janberd Media</title>
+</head>
+<body>
+    
+<input type="text" id="kenar" placeholder="Kenarı girin">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+//fonksiyonu tanımladık.
+function hesapla(){
+//text kutusu içindeki değeri okuyup sayi değişkenine aktarıyoruz.
+var sayi=document.getElementById("kenar").value;
+ 
+//text kutusuna girilen değerler metinsel türdedir. Hesaplama yapabilmek için sayıya çeviriyoruz.
+sayi=Number(sayi);
+ 
+var alan=sayi*sayi;
+var cevre=sayi*4;
+alert("Karenin alanı:"+alan+" \n Karenin çevresi:"+cevre);
+ 
+}
+//hesaplama yapması için hesap butonunu seçiyoruz.
+var hesapBtn=document.getElementById("hesapla");
+ 
+//fonksiyonu olaya bağlıyoruz.
+hesapBtn.onclick=hesapla;
+ </script>
+</body>
+</html>
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->

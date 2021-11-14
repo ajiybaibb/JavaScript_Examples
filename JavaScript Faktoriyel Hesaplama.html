@@ -1,0 +1,44 @@
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janberd Media</title>
+</head>
+<body>
+    <input type="text" id="sayi" placeholder="Faktöriyeli hesaplanacak sayıyı giriniz">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+function hesapla(){
+var faktoriyel=1;
+var sayi=document.getElementById("sayi").value;
+sayi=Number(sayi);
+if(sayi>=0)
+{
+for(var i=1;i<=sayi;i++)
+{
+faktoriyel=faktoriyel*i;
+}
+window.alert(sayi+" sayisinin faktöriyeli "+faktoriyel);
+}
+}
+var hesapBtn=document.getElementById("hesapla");
+hesapBtn.onclick=hesapla;
+</script>
+</body>
+</html>
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->

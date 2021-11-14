@@ -1,0 +1,46 @@
+
+<table>
+    <tr>
+    <td>TC Kimlik</td>
+    <td><input type="text" id="tc"></td>
+    <td><div id="uyari"></div><td>
+    </tr>
+    
+    <tr>
+    <td>Adı</td>
+    <td><input type="text" id="ad"></td>
+    </tr>
+    
+    <tr>
+    <td>Soyadı</td>
+    <td><input type="text" id="soyad"></td>
+    </tr>
+    
+    </table>
+    
+    </body>
+    </html>
+    <script>
+    var nesne =document.getElementById("tc");
+    var uyari =document.getElementById("uyari");
+     
+    nesne.onkeypress=function(){
+    uyari.textContent="";
+    }
+     
+    nesne.onblur=function(){
+     
+    try{
+    if(isNaN(nesne.value)) throw "Hatalı karakter girdiniz."; 
+    if(nesne.value.length<11) throw "11 karakterden az girdiniz.";
+    if(nesne.value.length>11) throw "11 karakterden fazla girdiniz.";
+    }
+    catch(e)
+    {
+    uyari.textContent=e;
+    nesne.focus();
+    }
+     
+    } 
+    </script>
+     

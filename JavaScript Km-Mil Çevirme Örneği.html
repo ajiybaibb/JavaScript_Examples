@@ -1,0 +1,34 @@
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janberd Media</title>
+</head>
+<body>
+    
+<input type="text" id="uzunluk" placeholder="Kilometre uzunluğunu girin">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+/* MİL=0,621.X kilometre mil formülü*/
+function hesapla(){
+var sayi=document.getElementById("uzunluk").value;
+sayi=Number(sayi);
+var mil=0.621*sayi;
+alert(sayi+"km="+mil.toFixed(2)+"mil'dir");
+}
+//hesaplama yapması için hesap butonunu seçiyoruz.
+var hesapBtn=document.getElementById("hesapla");
+//fonksiyonu olaya bağlıyoruz.
+hesapBtn.onclick=hesapla;
+</script>
+</body>
+</html>

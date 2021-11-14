@@ -1,0 +1,41 @@
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="kisa" placeholder="Kısa Kenarı girin">
+<input type="text" id="uzun" placeholder="Uzun Kenarı girin">
+<input type="button" value="Hesapla" id="hesapla">
+</body>
+</html>
+<script>
+function hesapla(){
+var kk=document.getElementById("kisa").value;
+var uk=document.getElementById("uzun").value;
+kk=Number(kk);
+uk=Number(uk);
+var alan=kk*uk;
+var cevre=(kk+uk)*2;
+alert("Dikdörtgen alanı:"+alan+" \n Dikdörtgen çevresi:"+cevre);
+}
+var hesapBtn=document.getElementById("hesapla");
+hesapBtn.onclick=hesapla;
+</script>
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->

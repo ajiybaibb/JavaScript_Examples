@@ -1,0 +1,100 @@
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janberd Media</title>
+</head>
+<body>
+    <style>
+        .panel{
+        width: 200px;
+        margin: auto;
+        }
+         
+        .panel input{
+        width: 100%;
+        height: 30px;
+        margin:3px 0;
+        background: #ededed;
+        border:solid 1px #ccc;
+        }
+         
+        #sonuc-yaz{
+        margin-top:10px;
+        height: 50px;
+        line-height: 50px;
+        font-size:1em;
+        font-weight: bold;
+        }
+         
+        </style>
+        <script>
+        /*sayfa yüklendiğinde aşağıdaki scripti çalıştır*/
+        window.onload=function(e){
+         
+        var y1=document.getElementById("y1");
+        var y2=document.getElementById("y2");
+        var y3=document.getElementById("y3");
+        var sonuc=document.getElementById("sonuc");
+        var hesapla=document.getElementById("hesapla");
+        var sonucYaz=document.getElementById("sonuc-yaz");
+         
+        /*0-100 arasında değilse uyarı ver*/
+        [y1,y2,y3].forEach(function(element) {
+        element.onchange=function(){
+         
+        if(Number(element.value)<0 || Number(element.value)>100)
+        {
+        element.value="";
+        this.focus();
+        }
+        }
+        });
+         
+         
+        /*hesapla butonuna tıkladığında*/
+        hesapla.onclick=function(){
+         
+        var s=(Number(y1.value)+Number(y2.value)+Number(y3.value))/3;
+        sonuc.value=s.toFixed(2);
+        if(s<50)
+        {
+        sonucYaz.textContent="BAŞARISIZ OLDUNUZ"; 
+        }
+        else{
+        sonucYaz.textContent="GEÇTİNİZ"; 
+        }
+         
+         
+        }
+        }
+         
+        </script>
+        </head>
+        <body>
+        <div class="panel">
+        <input type="text" id="y1" placeholder="1.yazılı">
+        <input type="text" id="y2" placeholder="2.yazılı">
+        <input type="text" id="y3" placeholder="3.yazılı">
+        <input type="text" id="sonuc">
+        <input type="button" id="hesapla" value="hesapla">
+        <div id="sonuc-yaz"></div>
+        </div>
+</body>
+</html>
+<!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->

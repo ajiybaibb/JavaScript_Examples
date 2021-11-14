@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janberd Media</title>
+</head>
+<body>
+    <input type="number" id="sayi">
+<input type="button" id="hesapla" value="HESAPLA">
+<div id="durumgoster"></div>
+</body>
+</html>
+<script>
+    var sayiNesne=document.getElementById("sayi");
+    var hesaplaBtn=document.getElementById("hesapla");
+    hesaplaBtn.onclick=islemYap;
+    function islemYap(){
+    var sayi=Number(sayiNesne.value);
+    var durumGoster=document.getElementById("durumgoster");
+    if(sayi<0)
+    {
+    durumGoster.innerHTML="SAYI NEGATİFTİR."; 
+    }
+    else if(sayi>0)
+    {
+    durumGoster.innerHTML="SAYI POZİTİFTİR"; 
+    }
+    else
+    {
+    durumGoster.innerHTML="SAYI SIFIRDIR"; 
+    }
+    }
+    </script>
+    <!--
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+     Janberd media           
+     janberd ibrahim bekir bektaş
+     Copyright © 2021. This template design and develop by Janberd Media
+    _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+-->
