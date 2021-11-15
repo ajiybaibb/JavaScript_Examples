@@ -12,34 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaberd Media</title>
+    <script src="JavaScript Kürenin Hacmini Hesaplama.js" type="text/javascript"></script>
 </head>
 <body>
 <input type="text" id="yaricap" placeholder="Kürenin Yarıçapını Girin">
 <input type="button" value="Hesapla" id="hesapla" >
-<script>
-
-function hesapla(){
-
-var sayi=document.getElementById("yaricap").value;
-
-//text kutusuna girilen değerler metinsel türdedir. Hesaplama yapabilmek için sayıya çeviriyoruz.
-sayi=Number(sayi);
-
-// Yarıçapı r olan kürenin hacmi (4. ?. r*r*r )/ 3
-var hacim=(4*Math.PI*sayi*sayi*sayi)/3;
-
-//ondalıklı kısımda 2 basamak gösterme
-hacim=hacim.toFixed(2);
-alert("Kürenin Hacmi: "+hacim +" birim küp");
-
-}
-//hesaplama yapması için hesap butonunu seçiyoruz.
-var hesapBtn=document.getElementById("hesapla");
-
-//fonksiyonu olaya bağlıyoruz.
-hesapBtn.addEventListener('click',hesapla,false);
-
-</script>
 </body>
 </html>
 <!--

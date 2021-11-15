@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janberd Media</title>
+    <script src="JavaScript Girilen Sayı Pozitif,Negatif yada Sıfır Mı.js" type="text/javascript"></script>
 </head>
 <body>
     <input type="number" id="sayi">
@@ -12,27 +13,7 @@
 <div id="durumgoster"></div>
 </body>
 </html>
-<script>
-    var sayiNesne=document.getElementById("sayi");
-    var hesaplaBtn=document.getElementById("hesapla");
-    hesaplaBtn.onclick=islemYap;
-    function islemYap(){
-    var sayi=Number(sayiNesne.value);
-    var durumGoster=document.getElementById("durumgoster");
-    if(sayi<0)
-    {
-    durumGoster.innerHTML="SAYI NEGATİFTİR."; 
-    }
-    else if(sayi>0)
-    {
-    durumGoster.innerHTML="SAYI POZİTİFTİR"; 
-    }
-    else
-    {
-    durumGoster.innerHTML="SAYI SIFIRDIR"; 
-    }
-    }
-    </script>
+
     <!--
     _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
      Janberd media           

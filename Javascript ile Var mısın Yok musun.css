@@ -1,0 +1,68 @@
+.para-agaci{
+	width:220px;
+	position:fixed;
+	text-align:center;
+
+	
+}
+.para-agaci .para{
+	margin:5px auto;
+	height:40px;
+	width:100px;
+	float:left;
+	margin-left:10px;
+
+}
+
+.kutular{
+	position:absolute;
+	left:250px;
+	width:1000px;
+	
+}
+
+.kutular .kutu{
+	float:left;
+	background:blue;
+	font-size:1em;
+	color:#fff;
+	width:150px;
+	height:100px;
+	line-height:100px;
+	margin:5px;
+	text-align:center;
+	
+}
+
+.hamdi{
+	background:#CD2847;
+	width:935px;
+	padding:10px;
+	color:#fff;
+
+}
+
+.kutular .aktif{
+background:#CD2847;
+}
+.kutular .pasif{
+background:#3E3033;
+}
+
+.kirmizi{
+	background:red;
+	font-size:1.5em;
+	color:#fff;
+}
+
+.mavi{
+	background:blue;
+	font-size:1.5em;
+	color:#fff;
+}
+
+.sari{
+	background:yellow;
+	font-size:1.5em;
+	color:#000;
+}

@@ -12,36 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaberd Media</title>
+    <script src="JavaScript ile Sayı Tahmin Oyunu.js" type="text/javascript"></script>
 </head>
 <body>
-    
-<script type="text/javascript" language="javascript">
-    var sayi,tahmin,hak=1,i=0;;
-    sayi=Math.round(Math.random()*100);
-    do
-    {
-        tahmin=parseInt(prompt("Tahmini Giriniz: "));
-        if (tahmin<sayi)
-        {
-            document.write("Daha büyük bir sayı giriniz.<br>"); 
-        }
-        if (tahmin>sayi)
-        {
-            document.write("Daha küçük bir sayı giriniz.<br>"); 
-        }
-        if (tahmin==sayi)
-        {
-        document.write("Tebrikler bildiniz. Tuttuğum sayı: "+ sayi + "<br>");
-        document.write(hak + ". hakkınızda bildiniz."); 
-        }
-    hak++;
-    }
-    while ((tahmin!=sayi) && hak<10)
-    if (hak>10)
-    {
-        document.write("Hakkınız kalmadı. Tutulan sayı : "+ sayi + "<br>");
-    }
-</script>
+
 </body>
 </html>
 <!--

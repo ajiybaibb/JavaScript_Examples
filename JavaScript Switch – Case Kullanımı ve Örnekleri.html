@@ -12,77 +12,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janberd Media</title>
+    <script src="JavaScript Switch – Case Kullanımı ve Örnekleri.js" type="text/javascript"></script>
 </head>
-
-switch (ifade) {
-    case deger1:
-    //ifade, deger1 ile eşleşirse yürütülecek olan kodlar.
-    [break;]
-    case deger2:
-    //ifade, deger2 ile eşleşirse yürütülecek olan kodlar.
-    [break;]
-    ...
-    case degerN:
-    //ifade, degerN ile eşleşirse yürütülecek olan kodlar.
-    [break;]
-    default:
-    //ifade, hiçbir değer ile eşleşmezse yürütülecek olan kodlar.
-    [break;]
-    }
-    
     <button onclick="GunBul()">Gün Göster</button>
     <p id="goster"></p>
-    <script>
-    function GunBul(){
-    var gun=new Date().getDay();
-    switch (gun) {
-    case 0:
-    day = "PAZAR";
-    break;
-    case 1:
-    day = "PAZARTESİ";
-    break;
-    case 2:
-    day = "SALI";
-    break;
-    case 3:
-    day = "ÇARŞAMBA";
-    break;
-    case 4:
-    day = "PERŞEMBE";
-    break;
-    case 5:
-    day = "CUMA";
-    break;
-    case 6:
-    day = "CUMARTESİ";
-    }
-    document.getElementById("goster").innerHTML = day;
-    }
-    </script>
-    
     <html>
     <body>
     <p id="demo"></p>
-    <script>
-    var text;
-    switch (new Date().getDay()) {
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            text = "Hafta ici";
-            break;
-        case 0:
-        case 6:
-            text = "Hafta sonu";
-            break;
-        default:
-            text = "Tanımsız";
-    }
-    document.getElementById("demo").innerHTML = text;
-    </script>
 <!--
     _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
      Janberd media           
