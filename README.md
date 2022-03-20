@@ -1,3 +1,4 @@
 # JavaScript Examples
 JavaScript Examples for beginners...
-İbrahim Bekir Bektaş
+<br>
+<p style="color:#ff0000;">İbrahim Bekir Bektaş<p\>
